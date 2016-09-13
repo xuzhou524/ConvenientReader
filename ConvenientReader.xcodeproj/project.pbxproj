@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5370702B1D87F6D800E401D2 /* ShareViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5370702A1D87F6D800E401D2 /* ShareViewController.m */; };
+		5370702E1D87F6D800E401D2 /* MainInterface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5370702C1D87F6D800E401D2 /* MainInterface.storyboard */; };
+		537070321D87F6D800E401D2 /* ConvenientReaderShare.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 537070271D87F6D800E401D2 /* ConvenientReaderShare.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		53F58C641D87A5060033A576 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 53F58C631D87A5060033A576 /* main.m */; };
 		53F58C671D87A5060033A576 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 53F58C661D87A5060033A576 /* AppDelegate.m */; };
 		53F58C6F1D87A5060033A576 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 53F58C6E1D87A5060033A576 /* Assets.xcassets */; };
@@ -79,7 +82,36 @@
 		53F58D531D87B9810033A576 /* iPhone.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 53F58D521D87B9810033A576 /* iPhone.pdf */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		537070301D87F6D800E401D2 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 53F58C571D87A5060033A576 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 537070261D87F6D800E401D2;
+			remoteInfo = ConvenientReaderShare;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		537070361D87F6D800E401D2 /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				537070321D87F6D800E401D2 /* ConvenientReaderShare.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
+		537070271D87F6D800E401D2 /* ConvenientReaderShare.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = ConvenientReaderShare.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		537070291D87F6D800E401D2 /* ShareViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ShareViewController.h; sourceTree = "<group>"; };
+		5370702A1D87F6D800E401D2 /* ShareViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ShareViewController.m; sourceTree = "<group>"; };
+		5370702D1D87F6D800E401D2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/MainInterface.storyboard; sourceTree = "<group>"; };
+		5370702F1D87F6D800E401D2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		53F58C5F1D87A5060033A576 /* ConvenientReader.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ConvenientReader.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		53F58C631D87A5060033A576 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		53F58C651D87A5060033A576 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -181,6 +213,13 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		537070241D87F6D800E401D2 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		53F58C5C1D87A5060033A576 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -197,10 +236,22 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		537070281D87F6D800E401D2 /* ConvenientReaderShare */ = {
+			isa = PBXGroup;
+			children = (
+				537070291D87F6D800E401D2 /* ShareViewController.h */,
+				5370702A1D87F6D800E401D2 /* ShareViewController.m */,
+				5370702C1D87F6D800E401D2 /* MainInterface.storyboard */,
+				5370702F1D87F6D800E401D2 /* Info.plist */,
+			);
+			path = ConvenientReaderShare;
+			sourceTree = "<group>";
+		};
 		53F58C561D87A5060033A576 = {
 			isa = PBXGroup;
 			children = (
 				53F58C611D87A5060033A576 /* ConvenientReader */,
+				537070281D87F6D800E401D2 /* ConvenientReaderShare */,
 				53F58CAE1D87A7540033A576 /* Frameworks */,
 				53F58C601D87A5060033A576 /* Products */,
 			);
@@ -210,6 +261,7 @@
 			isa = PBXGroup;
 			children = (
 				53F58C5F1D87A5060033A576 /* ConvenientReader.app */,
+				537070271D87F6D800E401D2 /* ConvenientReaderShare.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -366,6 +418,23 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		537070261D87F6D800E401D2 /* ConvenientReaderShare */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 537070351D87F6D800E401D2 /* Build configuration list for PBXNativeTarget "ConvenientReaderShare" */;
+			buildPhases = (
+				537070231D87F6D800E401D2 /* Sources */,
+				537070241D87F6D800E401D2 /* Frameworks */,
+				537070251D87F6D800E401D2 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ConvenientReaderShare;
+			productName = ConvenientReaderShare;
+			productReference = 537070271D87F6D800E401D2 /* ConvenientReaderShare.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
 		53F58C5E1D87A5060033A576 /* ConvenientReader */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 53F58C8C1D87A5060033A576 /* Build configuration list for PBXNativeTarget "ConvenientReader" */;
@@ -373,10 +442,12 @@
 				53F58C5B1D87A5060033A576 /* Sources */,
 				53F58C5C1D87A5060033A576 /* Frameworks */,
 				53F58C5D1D87A5060033A576 /* Resources */,
+				537070361D87F6D800E401D2 /* Embed App Extensions */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				537070311D87F6D800E401D2 /* PBXTargetDependency */,
 			);
 			name = ConvenientReader;
 			productName = ConvenientReader;
@@ -392,6 +463,9 @@
 				LastUpgradeCheck = 0730;
 				ORGANIZATIONNAME = xuzhou;
 				TargetAttributes = {
+					537070261D87F6D800E401D2 = {
+						CreatedOnToolsVersion = 7.3.1;
+					};
 					53F58C5E1D87A5060033A576 = {
 						CreatedOnToolsVersion = 7.3.1;
 					};
@@ -414,11 +488,20 @@
 			projectRoot = "";
 			targets = (
 				53F58C5E1D87A5060033A576 /* ConvenientReader */,
+				537070261D87F6D800E401D2 /* ConvenientReaderShare */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		537070251D87F6D800E401D2 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5370702E1D87F6D800E401D2 /* MainInterface.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		53F58C5D1D87A5060033A576 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -469,6 +552,14 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		537070231D87F6D800E401D2 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5370702B1D87F6D800E401D2 /* ShareViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		53F58C5B1D87A5060033A576 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -502,7 +593,23 @@
 		};
 /* End PBXSourcesBuildPhase section */
 
+/* Begin PBXTargetDependency section */
+		537070311D87F6D800E401D2 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 537070261D87F6D800E401D2 /* ConvenientReaderShare */;
+			targetProxy = 537070301D87F6D800E401D2 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
 /* Begin PBXVariantGroup section */
+		5370702C1D87F6D800E401D2 /* MainInterface.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				5370702D1D87F6D800E401D2 /* Base */,
+			);
+			name = MainInterface.storyboard;
+			sourceTree = "<group>";
+		};
 		53F58CFA1D87AE1F0033A576 /* Localizable.strings */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -517,6 +624,28 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		537070331D87F6D800E401D2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = ConvenientReaderShare/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = Convenient.ConvenientReader.ConvenientReaderShare;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		537070341D87F6D800E401D2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = ConvenientReaderShare/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = Convenient.ConvenientReader.ConvenientReaderShare;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
 		53F58C8A1D87A5060033A576 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -626,6 +755,14 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		537070351D87F6D800E401D2 /* Build configuration list for PBXNativeTarget "ConvenientReaderShare" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				537070331D87F6D800E401D2 /* Debug */,
+				537070341D87F6D800E401D2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
 		53F58C5A1D87A5060033A576 /* Build configuration list for PBXProject "ConvenientReader" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (

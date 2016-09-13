@@ -9,9 +9,19 @@
 			<key>orderHint</key>
 			<integer>0</integer>
 		</dict>
+		<key>ConvenientReaderShare.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>1</integer>
+		</dict>
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
+		<key>537070261D87F6D800E401D2</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
 		<key>53F58C5E1D87A5060033A576</key>
 		<dict>
 			<key>primary</key>
